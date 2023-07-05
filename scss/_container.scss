@@ -1,0 +1,108 @@
+@import 'base';
+@import 'navbar';
+@import 'main-nav';
+
+.main-wrapper{
+	max-height: 100vh;
+}
+.container{
+    padding:0;
+	margin: 0;
+	gap :0 !important;
+}
+.wrapper{
+		top: 80px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		position: absolute;
+		width: auto;
+		height: auto;
+	}
+.filter{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	p{
+		@include heading-font;
+		margin: 0;
+	}
+	.caption{
+		@include card-heading;
+		font-weight: normal;
+		color: $label-color;
+	}
+	.filter-grp{
+		.dropdown{
+			a{
+				@include card-heading;
+			}
+		
+		}
+	}
+}
+.content{
+	background-color: #fff;
+	border: 1px solid $border-color;
+}
+.card-container{
+	overflow-x: hidden;
+	// margin: auto;
+	.row{
+		padding-bottom: 2rem;
+	}
+}
+.calendar-container{
+	margin: auto;
+	gap: 1rem;
+
+}
+#secondary-nav {
+	// width: 12rem;
+	background-color:white;
+	transition: width 0.3s;
+	box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.493);
+}
+.secondary-nav-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li {
+		padding: 8px;
+		a {
+			display: block;
+			text-decoration: none;
+			color: $primary-color;
+			}
+		&:hover {
+					background-color: $primary-color;
+					a{
+						color: #fff;
+						background-color: $primary-color;
+					}
+				}
+		&.active{
+					a{color:#fff}
+					background-color: $primary-color;
+				}
+		}
+	}
+
+#right-nav{
+	background-color: white;
+	transition: width 0.3s;
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.493);
+}
+.right-nav-menu {
+	padding: 0;
+	margin: 0;
+	height: 70vh;
+    justify-content: space-between;
+	.text-white{
+		padding: 10px;
+        background-color: $primary-color;
+		a {
+			display: block;
+			text-decoration: none;
+		}
+	}
+}

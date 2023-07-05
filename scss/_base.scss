@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+//typography
+$main-font: 'Poppins', sans-serif;
+$small-font: 9px;
+@mixin heading-font{
+    font-weight:bold;
+    font-size: 15px;
+}
+@mixin card-heading{
+    font-size: 12px;
+}
+
+//color
+$primary-color :#00205C;
+$active-color:  rgba(0, 153, 221, 0.62);
+$label-color: #464A53;
+$background-color: #F7F8FA;
+$border-color: #DDDFE1;
+
+
+body{
+    font-family: $main-font;
+}
+
+.navbar-brand{
+    font-weight: 600;
+}

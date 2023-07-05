@@ -1,0 +1,21 @@
+.navbar{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    padding: 6px 0 6px 32px;;
+    .navbar-brand{
+        font-size: 38px;
+        color: $primary-color;
+    }
+    ul{
+        @include card-heading;
+        align-items: center;
+        margin-right: 2rem;
+        &.position-absolute{
+            left:0;
+        }
+        li>a{
+            .position-absolute{
+                right: 4px;
+            }
+        }
+    }
+}

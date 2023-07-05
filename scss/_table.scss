@@ -1,0 +1,46 @@
+@import 'base';
+body {
+    background-color: $background-color;
+}
+.table-calendar{
+    width: 100%;
+    border: 1px solid $border-color;
+    caption {
+        @include card-heading;
+        text-transform: uppercase;
+        color: $label-color;
+    }
+    thead {
+        th {
+            @include card-heading;
+            background-color: #fff;
+            color: $label-color;
+            padding: 10px;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid $border-color;;
+            color: $label-color;
+            td {
+                padding: 20px;
+            }
+            th {
+                padding-left: 10px;
+                border: 1px solid $border-color;
+            }
+        }
+       tr:nth-child(2n) {
+            background-color:#fffafa;
+          }
+    }
+    tfoot {
+        color: $label-color;
+        font-style: italic;
+        tr {
+            td {
+                padding: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import 'base';
+
+#main-nav{
+	width: 17rem;
+	background-color: $primary-color;
+	transition: width 0.3s;
+	position: relative;
+	.main-nav-header {
+		position: absolute;
+		right: -1rem;
+		top: 50%;
+		width: 2rem;
+	}
+	.main-nav-menu {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		& hr{
+				margin: 1rem;
+				color: #fff;
+			}
+		li {
+			padding: 8px;
+			a {
+				display: block;
+				text-decoration: none;
+				color: white;
+			}
+			&:hover{
+				background-color: $active-color;
+			}
+			&.active{
+				background-color: $active-color;
+			}
+		}
+	}
+	.menu-footer{
+		a{
+			text-decoration: none;
+		}
+	}
+}
+.collapsed {
+	width: 50px !important;
+	.text{
+		display: none;
+	}
+}
