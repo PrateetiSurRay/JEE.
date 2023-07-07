@@ -97,6 +97,18 @@
 	background-color: white;
 	transition: width 0.3s;
     box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.493);
+	position: relative;
+		.right-nav-header {
+			position: absolute;
+			left: -1rem;
+			top: 50%;
+			& #right-collapse-btn{
+				border-radius: 50% ;
+				border-style: none;
+				box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.493);
+				background-color: #fff;
+			}
+		}
 }
 .right-nav-menu {
 	padding: 0;
@@ -110,5 +122,12 @@
 			display: block;
 			text-decoration: none;
 		}
+	}
+}
+
+.rightcollapsed {
+	width: 50px !important;
+	.text{
+		display: none;
 	}
 }
