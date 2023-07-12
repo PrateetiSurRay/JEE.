@@ -9,8 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-   <div class="main-wrapper">
-      <nav class="navbar navbar-expand-lg navbar-light">
+       <nav class="navbar navbar-expand-lg navbar-light">
          <a class="navbar-brand" href="#">JEE</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
@@ -42,62 +41,65 @@
            </li>
          </ul>
           </div>
-      </nav>
-       <div class="wrapper d-flex">
-         <div id="main-nav">
-            <div class="main-nav-header">
-              <button id="collapse-btn">
-               <img src="icons/Vector 22 (Stroke).svg">
-              </button>
-            </div>
-            <ul id="main-nav-menu" class="main-nav-menu">
-                <li id="home">
-                   <a href="#"><img src="icons/Vector.svg" class="me-3"><span class="text">Home</span></a>
-                </li>  
-                <li id="dashboard"  class="active">
-                   <a href="index.html"><img src="icons/Dashboard Icon.svg"class="me-3"><span class="text">Dashboard</span></a>
-                </li>
-                <li id="self">
-                   <a href="self.html"><img src="icons/Message Icon.svg"class="me-3"><span class="text">Self Evaluation</span></a>
-                </li>
-                <li id="external">
-                 <a href="external.html"><img src="icons/Chart Icon.svg"class="me-3"><span class="text">External Evaluation</span></a>
-                </li>
-                <hr>
-                <li id="user">
-                 <a href="user.html"><img src="icons/noun-user-5409198-FFFFFF 1.svg"class="me-3"><span class="text">User Management</span></a>
-                </li>
-                <li id="file">
-                 <a href="#"><img src="icons/noun-folder-174938-FFFFFF 1.svg"class="me-3"><span class="text">File Repository</span></a>
-                </li>
-                <hr>
-                <li id="help">
-                 <a href="#"><img src="icons/noun-help-1009848-FFFFFF 1.svg"class="me-3" ><span class="text">Help Center</span></a>
-                </li>
-            </ul>
-            <div class="menu-footer mt-auto ms-2">
-               <a href="#"><img src="icons/setting.svg"class="me-3">
-                 <span class="text text-white" style="text-decoration: none;">System Management</span></a>
-             </div>
+       </nav>
+       <div id="main-nav" class="d-flex flex-column">
+         <div class="main-nav-header">
+           <button id="collapse-btn">
+             <span> <img src="icons/Vector 22 (Stroke).svg"></span>
+           </button>
          </div>
-         <div class="container d-flex">
-           <div id="secondary-nav"class="col-md-2">
-             <ul class="secondary-nav-menu">
-                 <li >
-                    <a href="index.html"><span class="text">Global Map</span></a>
-                 </li>  
-                 <li>
-                    <a href="externall.html"><span class="text">External Evaluation</span></a>
-                 </li>
-                 <li class="active">
-                    <a href="calendar.html"><span class="text">Calendar</span></a>
-                 </li>
-                 <li>
-                  <a href="timeline.html"><span class="text">Timeline</span></a>
-                 </li>
-             </ul>
-           </div>
-            <div class="calendar-container d-flex flex-column">
+         <ul id="main-nav-menu" class="main-nav-menu">
+           <li id="home">
+             <a href="#"><img src="icons/Vector.svg" class="me-3"><span class="text">Home</span></a>
+           </li>
+           <li id="dashboard" class="active">
+             <a href="#"><img src="icons/Dashboard Icon.svg" class="me-3"><span class="text">Dashboard</span></a>
+           </li>
+           <li id="self">
+             <a href="self.html"><img src="icons/Message Icon.svg" class="me-3"><span class="text">Self Evaluation</span></a>
+           </li>
+           <li id="externall">
+             <a href="externall.html"><img src="icons/Chart Icon.svg" class="me-3"><span class="text">External
+                 Evaluation</span></a>
+           </li>
+           <hr>
+           <li id="user">
+             <a href="user.html"><img src="icons/noun-user-5409198-FFFFFF 1.svg" class="me-3"><span class="text">User
+                 Management</span></a>
+           </li>
+           <li id="file">
+             <a href="#"><img src="icons/noun-folder-174938-FFFFFF 1.svg" class="me-3"><span class="text">File
+                 Repository</span></a>
+           </li>
+           <hr>
+           <li id="help">
+             <a href="#"><img src="icons/noun-help-1009848-FFFFFF 1.svg" class="me-3"><span class="text">Help
+                 Center</span></a>
+           </li>
+         </ul>
+         <div class="menu-footer mt-auto ms-2">
+           <a href="#"><img src="icons/setting.svg" class="me-3">
+             <span class="text text-white" style="text-decoration: none;">System Management</span></a>
+         </div>
+       </div>
+       <div class="d-flex">
+          <div id="secondary-nav">
+            <ul class="secondary-nav-menu">
+              <li>
+                <a href="index.html"><span class="text">Global Map</span></a>
+              </li>
+              <li >
+                <a href="externall.html"><span class="text">External Evaluation</span></a>
+              </li>
+              <li class="active">
+                <a href="calendar.html"><span class="text">Calendar</span></a>
+              </li>
+              <li>
+                <a href="timeline.html"><span class="text">Timeline</span></a>
+              </li>
+            </ul>
+          </div>
+            <div class="card-container container d-flex flex-column" id="card-container">
                <div class="filter d-flex justify-content-between"> 
                   <div class="filter-text">
                      <p>Showing  20 result of “AFRO” countries</p>
@@ -216,9 +218,7 @@
                   </div>
                </div>
             </div>
-         </div>
        </div>
-   </div>
     <script src="script.js"></script>
 </body>
 </html>
