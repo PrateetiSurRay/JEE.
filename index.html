@@ -9,7 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-   <div class="main-wrapper">
       <nav class="navbar navbar-expand-lg navbar-light">
          <a class="navbar-brand" href="#">JEE</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,74 +42,76 @@
          </ul>
           </div>
       </nav>
-       <div class="wrapper d-flex">
-         <div id="main-nav" class="d-flex flex-column" >
-            <div class="main-nav-header">
-              <button id="collapse-btn">
-                <span><i class="fa-solid fa-angle-left"></i></span>
-              </button>
-            </div>
-            <ul id="main-nav-menu" class="main-nav-menu">
-                <li id="home">
-                   <a href="#"><img src="icons/Vector.svg" class="me-3"><span class="text">Home</span></a>
+      <div id="main-nav" class="d-flex flex-column" >
+         <div class="main-nav-header">
+           <button id="collapse-btn">
+             <img src="icons/Vector 22 (Stroke).svg">
+           </button>
+         </div>
+         <ul id="main-nav-menu" class="main-nav-menu">
+             <li id="home">
+                <a href="#"><img src="icons/Vector.svg" class="me-3"><span class="text">Home</span></a>
+             </li>  
+             <li id="dashboard" class="active">
+                <a href="index.html"><img src="icons/Dashboard Icon.svg"class="me-3"><span class="text">Dashboard</span></a>
+             </li>
+             <li id="self">
+                <a href="self.html"><img src="icons/Message Icon.svg"class="me-3"><span class="text">Self Evaluation</span></a>
+             </li>
+             <li id="external">
+              <a href="external.html"><img src="icons/Chart Icon.svg"class="me-3"><span class="text">External Evaluation</span></a>
+             </li>
+             <hr>
+             <li id="user">
+              <a href="user.html"><img src="icons/noun-user-5409198-FFFFFF 1.svg"class="me-3"><span class="text">User Management</span></a>
+             </li>
+             <li id="file">
+              <a href="#"><img src="icons/noun-folder-174938-FFFFFF 1.svg"class="me-3"><span class="text">File Repository</span></a>
+             </li>
+             <hr>
+             <li id="help">
+              <a href="#"><img src="icons/noun-help-1009848-FFFFFF 1.svg"class="me-3" ><span class="text">Help Center</span></a>
+             </li>
+         </ul>
+         <div class="menu-footer mt-auto ms-2">
+            <a href="#"><img src="icons/setting.svg"class="me-3">
+              <span class="text text-white" style="text-decoration: none;">System Management</span></a>
+          </div>
+      </div>
+       <div class="d-flex">
+         <div id="secondary-nav">
+            <ul class="secondary-nav-menu">
+                <li class="active">
+                   <a href="#"><span class="text">Global Map</span></a>
                 </li>  
-                <li id="dashboard" class="active">
-                   <a href="index.html"><img src="icons/Dashboard Icon.svg"class="me-3"><span class="text">Dashboard</span></a>
+                <li>
+                   <a href="externall.html"><span class="text">External Evaluation</span></a>
                 </li>
-                <li id="self">
-                   <a href="self.html"><img src="icons/Message Icon.svg"class="me-3"><span class="text">Self Evaluation</span></a>
+                <li>
+                   <a href="calendar.html"><span class="text">Calendar</span></a>
                 </li>
-                <li id="external">
-                 <a href="external.html"><img src="icons/Chart Icon.svg"class="me-3"><span class="text">External Evaluation</span></a>
-                </li>
-                <hr>
-                <li id="user">
-                 <a href="user.html"><img src="icons/noun-user-5409198-FFFFFF 1.svg"class="me-3"><span class="text">User Management</span></a>
-                </li>
-                <li id="file">
-                 <a href="#"><img src="icons/noun-folder-174938-FFFFFF 1.svg"class="me-3"><span class="text">File Repository</span></a>
-                </li>
-                <hr>
-                <li id="help">
-                 <a href="#"><img src="icons/noun-help-1009848-FFFFFF 1.svg"class="me-3" ><span class="text">Help Center</span></a>
+                <li>
+                 <a href="timeline.html"><span class="text">Timeline</span></a>
                 </li>
             </ul>
-            <div class="menu-footer mt-auto ms-2">
-               <a href="#"><img src="icons/setting.svg"class="me-3">
-                 <span class="text text-white" style="text-decoration: none;">System Management</span></a>
-             </div>
-         </div>
-         <div class="d-flex" id="container">
-            <div id="secondary-nav" class="col-md-2">
-             <ul class="secondary-nav-menu">
-                 <li class="active">
-                    <a href="#"><span class="text">Global Map</span></a>
-                 </li>  
-                 <li>
-                    <a href="externall.html"><span class="text">External Evaluation</span></a>
-                 </li>
-                 <li>
-                    <a href="calendar.html"><span class="text">Calendar</span></a>
-                 </li>
-                 <li>
-                  <a href="timeline.html"><span class="text">Timeline</span></a>
-                 </li>
-             </ul>
-            </div>
-            <p class="col-md-6 ">page content</p>
-            <div class="col-md-4">
-               <div id="right-nav">
-                   <div id="right-nav-menu" class="right-nav-menu d-flex flex-column text-center">
-                     <div class="text-white"><span class="text">Ongoing Missions</span></div>
-                     <div class="text-white"><span class="text">Planned Missions</span></div>
-                     <div class="text-white"><span class="text">Ongoing Self Assessments</span></div>
-                     <div class="text-white"><span class="text">Published Reports</span></div>
-                    </div>
-               </div>
-            </div>
          </div>
        </div>
-   </div>
+       <div class="card-container d-inline" id="card-container">
+         <img alt="global-map">
+      </div>
+       <div id="right-nav">
+         <div class="right-nav-header">
+            <button id="right-collapse-btn">
+              <img src="icons/Vector 22 (Stroke).svg">
+            </button>
+          </div>
+             <div id="right-nav-menu" class="right-nav-menu d-flex flex-column justify-content-between text-center">
+               <div class="text-white"><span class="text">Ongoing Missions</span></div>
+               <div class="text-white"><span class="text">Planned Missions</span></div>
+               <div class="text-white"><span class="text">Ongoing Self Assessments</span></div>
+               <div class="text-white"><span class="text">Published Reports</span></div>
+              </div>
+      </div>
     <script src="script.js"></script>
 </body>
 </html>
