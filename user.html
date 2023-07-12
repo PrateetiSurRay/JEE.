@@ -9,7 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-   <div class="main-wrapper">
       <nav class="navbar navbar-expand-lg navbar-light">
          <a class="navbar-brand" href="#">JEE</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +42,6 @@
          </ul>
           </div>
       </nav>
-      <div class="wrapper d-flex">
          <div id="main-nav"  class="d-flex flex-column">
             <div class="main-nav-header">
               <button id="collapse-btn">
@@ -68,7 +66,7 @@
                  <a href="user.html"><img src="icons/noun-user-5409198-FFFFFF 1.svg"class="me-3"><span class="text">User Management</span></a>
                 </li>
                 <li id="file">
-                 <a href="#"><img src="icons/noun-folder-174938-FFFFFF 1.svg"class="me-3"><span class="text">File Repository</span></a>
+                 <a href="repository.html"><img src="icons/noun-folder-174938-FFFFFF 1.svg"class="me-3"><span class="text">File Repository</span></a>
                 </li>
                 <hr>
                 <li id="help">
@@ -80,7 +78,7 @@
                  <span class="text text-white" style="text-decoration: none;">System Management</span></a>
              </div>
          </div>
-         <div class="container d-flex">
+         <div class="d-flex">
            <div id="secondary-nav"class="col-md-2 me-auto">
              <ul class="secondary-nav-menu">
                  <li class="active">
@@ -97,7 +95,7 @@
                  </li>
              </ul>
            </div>
-            <div class="calendar-container flex-column">
+            <div class="card-container container d-flex flex-column" id="card-container">
                 <div class="filter d-flex justify-content-between"> 
                     <form>
                         <div class="me-0">
@@ -200,8 +198,6 @@
                </div>
             </div>
          </div>
-      </div>
-   </div>
     <script src="script.js"></script>
 </body>
 </html>
