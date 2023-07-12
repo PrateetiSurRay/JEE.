@@ -5,7 +5,10 @@ const rightNav= document.getElementById('right-nav');
 
 collapseBtn.addEventListener('click', function() {
   mainNav.classList.toggle('collapsed');
-  document.getElementById("container").style.width="100vw";
+  document.getElementById("card-container").classList.toggle('margin-left-16rem');
+  document.getElementById("secondary-nav").classList.toggle('margin-left-4rem')
+
+
 });
 rightcollapseBtn.addEventListener('click', function() {
   rightNav.classList.toggle('rightcollapsed');
