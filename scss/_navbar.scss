@@ -1,4 +1,9 @@
 .navbar{
+    position: sticky;
+    background-color: white;
+    top:0;
+    height: 5rem;
+    width: 100%;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     padding: 6px 0 6px 32px;;
     .navbar-brand{
