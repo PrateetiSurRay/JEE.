@@ -1,30 +1,10 @@
-@import 'base';
-@import 'navbar';
-@import 'main-nav';
-
-.main-wrapper{
-	max-height: 100vh;
-}
-.container{
-    padding:0;
-	margin: 0;
-	gap :0 !important;
-}
 #container{
-	width: 100vw;
-        padding:0;
-	margin: 0;
+	margin-left: 28rem;
+	width: 100%;
+	height: 100%;
 	gap :0 !important;
 }
-.wrapper{
-		top: 80px;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		position: absolute;
-		width: auto;
-		height: auto;
-	}
+
 .filter{
 	margin-top: 1rem;
 	margin-bottom: 1rem;
@@ -42,7 +22,7 @@
 			a{
 				@include card-heading;
 			}
-		
+
 		}
 	}
 }
@@ -51,22 +31,31 @@
 	border: 1px solid $border-color;
 }
 .card-container{
-	overflow-x: hidden;
-	// margin: auto;
+	overflow-y: auto;
+	z-index: -1;
+	margin-left: 28rem;
 	.row{
 		padding-bottom: 2rem;
 	}
 }
-.calendar-container{
-	margin: auto;
-	gap: 1rem;
-
+.timeline{
+	.card-container{
+		.content{
+			height: 60vh;
+			background-color: #fff;
+	        border: 1px solid $border-color; 
+		}
+	}
 }
 #secondary-nav {
-	// width: 12rem;
+	position: fixed;
+	width: 12rem;
+	height: 100vh;
+	// margin-top: 5rem;
 	background-color:white;
 	transition: width 0.3s;
 	box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.493);
+	margin-left: 16rem;
 }
 .secondary-nav-menu {
 	list-style: none;
@@ -94,6 +83,10 @@
 	}
 
 #right-nav{
+	width:24rem;
+	z-index: 1;
+	float: right;
+	height: calc(100vh - 5rem);
 	background-color: white;
 	transition: width 0.3s;
     box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.493);
@@ -113,8 +106,7 @@
 .right-nav-menu {
 	padding: 0;
 	margin: 0;
-	height: 70vh;
-    justify-content: space-between;
+	height: calc(100% - 5rem);
 	.text-white{
 		padding: 10px;
         background-color: $primary-color;
@@ -130,4 +122,16 @@
 	.text{
 		display: none;
 	}
+}
+
+.margin-left-4rem{
+	margin-left: 48px !important;
+}
+
+.position-fixed{
+	position: fixed;
+}
+
+.margin-left-16rem{
+	margin-left: 16rem !important;
 }
